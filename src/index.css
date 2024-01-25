@@ -19,6 +19,10 @@
     color: #da002b;
 }
 
+.katalog:hover .child {
+    background-color: #da002b;
+}
+
 .icons {
     display: flex;
     flex-direction: column;
@@ -27,7 +31,22 @@
     cursor: pointer;
 }
 
+.icons:hover span {
+    color: #da002b;
+}
+
+.icons:hover .icon {
+    stroke: #da002b;
+    fill: none;
+    color: #da002b;
+}
+
 .icons .icon {
     width: 24px;
     height: 24px;
+}
+
+.title {
+    font-weight: 500;
+    color: #111;
 }

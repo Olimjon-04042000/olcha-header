@@ -13,9 +13,9 @@ const HeaderOlcha = () => {
         ></img>
         <div className="katalog flex items-center font-medium text-[18px] border-[2px] border-[#111111] rounded-xl pt-[15px] pr-[27px] pl-[28px] pb-[15px] w-[162px] h-12 cursor-pointer">
           <div className="flex flex-col gap-[6px] mr-[19px]">
-            <div className=" w-5 h-[2px] bg-[#111111]"></div>
-            <div className=" w-5 h-[2px] bg-[#111111]"></div>
-            <div className=" w-5 h-[2px] bg-[#111111]"></div>
+            <div className="child w-5 h-[2px] bg-[#111111] "></div>
+            <div className="child w-5 h-[2px] bg-[#111111] "></div>
+            <div className="child w-5 h-[2px] bg-[#111111] "></div>
           </div>
           <p>Katalog</p>
         </div>
@@ -73,7 +73,7 @@ const HeaderOlcha = () => {
                 rx="1.25"
               ></rect>
             </svg>
-            <span>Taqqoslash</span>
+            <span className="title" >Taqqoslash</span>
           </p>
           <p className="icons">
             <svg
@@ -88,9 +88,12 @@ const HeaderOlcha = () => {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
+                stroke="#111"
+                fill="white"
+
               ></path>
             </svg>
-            <span>Sevimlilar</span>
+            <span className="title" >Sevimlilar</span>
           </p>
           <p className="icons">
             <svg
@@ -98,6 +101,8 @@ const HeaderOlcha = () => {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               className="icon"
+              fill="none"
+              stroke="#111"
             >
               <path
                 data-v-0507f46a=""
@@ -116,7 +121,7 @@ const HeaderOlcha = () => {
                 strokeLinejoin="round"
               ></path>
             </svg>
-            <span>Savatcha</span>
+            <span className="title" >Savatcha</span>
           </p>
           <p className="icons">
             <svg
@@ -144,7 +149,7 @@ const HeaderOlcha = () => {
                                   7.20888 16 8C16 9.06087 15.5786 10.0783 14.8284 10.8284C14.0783 11.5786 13.0609 12 12 12Z"
               ></path>
             </svg>
-            <span>Kirish</span>
+            <span className="title" >Kirish</span>
           </p>
         </div>
       </div>
