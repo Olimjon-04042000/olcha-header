@@ -14,6 +14,11 @@
     margin: 0 auto;
 }
 
+.katalog,
+.katalog .child {
+    transition: all 0.3s ease 0s;
+}
+
 .katalog:hover {
     border-color: #da002b;
     color: #da002b;
@@ -21,6 +26,7 @@
 
 .katalog:hover .child {
     background-color: #da002b;
+    color: #da002b;
 }
 
 .icons {
@@ -29,6 +35,11 @@
     align-items: center;
     font-size: 14px;
     cursor: pointer;
+}
+
+.icons .icon,
+.title {
+    transition: all 0.3s ease 0s;
 }
 
 .icons:hover span {
@@ -41,6 +52,13 @@
     color: #da002b;
 }
 
+.icons:hover .icon1 {
+    transition: fill 0.2s ease 0s;
+    fill: #da002b;
+    color: #da002b;
+    stroke-width: 0.1px;
+}
+
 .icons .icon {
     width: 24px;
     height: 24px;
@@ -49,4 +67,8 @@
 .title {
     font-weight: 500;
     color: #111;
+}
+
+.abc {
+    height: 40px;
 }

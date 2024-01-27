@@ -1,8 +1,11 @@
 import React from "react";
 
 const HeaderOlcha = () => {
+
+  const handleClick=()=>{}
+
   return (
-    <div className="pt-7">
+    <div className="pt-7 pb-7">
       <div className="container flex items-center justify-between">
         <img className="mr-10 cursor-pointer"
           src="https://olcha.uz/_nuxt/logo-red.46354f18.png"
@@ -11,8 +14,8 @@ const HeaderOlcha = () => {
           height="30"
           data-v-0507f46a=""
         ></img>
-        <div className="katalog flex items-center font-medium text-[18px] border-[2px] border-[#111111] rounded-xl pt-[15px] pr-[27px] pl-[28px] pb-[15px] w-[162px] h-12 cursor-pointer">
-          <div className="flex flex-col gap-[6px] mr-[19px]">
+        <div onClick={handleClick} className="katalog flex items-center font-medium text-[18px] border-[2px] border-[#111111] rounded-xl pt-[15px] pr-[27px] pl-[28px] pb-[15px] w-[162px] h-12 cursor-pointer">
+          <div className="flex  flex-col gap-[6px] mr-[19px]">
             <div className="child w-5 h-[2px] bg-[#111111] "></div>
             <div className="child w-5 h-[2px] bg-[#111111] "></div>
             <div className="child w-5 h-[2px] bg-[#111111] "></div>
@@ -38,7 +41,7 @@ const HeaderOlcha = () => {
               data-v-0507f46a=""
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
-              className="icon "
+              className="icon icon1"
             >
               <rect
                 data-v-0507f46a=""
@@ -80,7 +83,9 @@ const HeaderOlcha = () => {
               data-v-0507f46a=""
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
-              className="icon"
+              className="icon icon2"
+              stroke="#111"
+              fill="none"
             >
               <path
                 data-v-0507f46a=""
@@ -88,9 +93,7 @@ const HeaderOlcha = () => {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                stroke="#111"
-                fill="white"
-
+            
               ></path>
             </svg>
             <span className="title" >Sevimlilar</span>
@@ -100,8 +103,9 @@ const HeaderOlcha = () => {
               data-v-0507f46a=""
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
-              className="icon"
+              className="icon icon3"
               fill="none"
+              strokeWidth="1.2"
               stroke="#111"
             >
               <path
@@ -116,7 +120,7 @@ const HeaderOlcha = () => {
                 data-v-0507f46a=""
                 d="M3.125 5H16.7512C16.8427 5 16.9332 5.02011 17.0161 5.0589C17.099 5.0977 17.1724 5.15423 17.231 5.22451C17.2897 5.29479 17.3322 5.37709 17.3555 5.4656C17.3789 5.55412 17.3825 5.64668 17.3661 5.73674L16.0601 12.9242C16.0339 13.0683 15.958 13.1985 15.8456 13.2923C15.7332 13.3861 15.5915 13.4375 15.4451 13.4375H5.18665C5.04034 13.4375 4.89866 13.3862 4.78631 13.2924C4.67395 13.1987 4.59804 13.0686 4.57179 12.9246L2.65034 2.38788C2.6241 2.24394 2.54818 2.11377 2.43583 2.02005C2.32347 1.92633 2.1818 1.875 2.03548 1.875H0.9375"
                 stroke="currentColor"
-                strokeWidth="1.875"
+                strokeWidth="1.55"
                 strokeLinecap="round"
                 strokeLinejoin="round"
               ></path>
@@ -128,7 +132,7 @@ const HeaderOlcha = () => {
               data-v-0507f46a=""
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
-              className="icon "
+              className="icon icon1 "
             >
               <path
                 data-v-0507f46a=""
@@ -152,6 +156,7 @@ const HeaderOlcha = () => {
             <span className="title" >Kirish</span>
           </p>
         </div>
+      
       </div>
     </div>
   );
